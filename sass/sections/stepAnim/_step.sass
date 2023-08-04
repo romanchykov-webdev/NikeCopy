@@ -1,0 +1,48 @@
+.wrapStep
+    position: absolute
+    display: none
+    // top: calc( 50% -  50px)
+    // left: calc( 50% -  50px)
+    width: 100px
+    height: 100px
+    // outline: 1px solid red
+    z-index: 100
+    justify-content: center
+    align-items: center
+    transform: rotate(20deg)
+    
+    .stepLeft,.stepRight
+        position: relative
+        transition: 1s
+        svg
+            width: 20px
+            height: 40px
+            g
+                fill: white
+    .stepLeft
+        // animation-name: stepLeft
+        // animation-duration: 1s
+        animation: .25s linear 0.5s infinite alternate stepLeft
+    .stepRight
+        animation: .25s linear 0.5s infinite alternate stepRight
+.wrapStep.active
+    animation: 2s linear 0.5s alternate up
+    display: flex
+@keyframes stepLeft 
+  from 
+        top: 0
+  to
+        top: -15px
+@keyframes stepRight 
+  from 
+        top: -15px
+  to
+        top: 0
+@keyframes up 
+  from 
+        // top: calc( 50% -  50px)
+  to
+        top: -50px
+        left: 100%
+        display: none
+

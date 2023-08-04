@@ -1,0 +1,39 @@
+@media (max-width: 992px)
+    .popup 
+        .wrapper
+            width: auto
+            height: auto
+            .imgBx 
+                padding: 40px 
+                box-sizing: border-box 
+                width: 100% !important 
+                height: auto 
+                text-align: center 
+                overflow: hidden 
+                img 
+                    left: initial 
+                    max-width: 100% 
+                    transform: rotate(0deg) 
+            .details 
+                width: 100% !important 
+                height: auto 
+                padding: 20px 
+                p 
+                    margin-left: 0 
+                    max-width: 100% 
+            .closePopup
+                z-index: 1
+                color: $colorWhite
+@media (max-width: 480px)
+     .popup 
+        .wrapper
+            margin: 0
+            .details
+                padding: 20px
+                p
+                    margin-bottom: 20px
+                .textDescription
+                    max-height: 114px
+                    // outline: 1px solid red
+                    text-overflow: ellipsis
+                    overflow: hidden

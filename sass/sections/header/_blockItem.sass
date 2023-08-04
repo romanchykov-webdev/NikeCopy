@@ -1,0 +1,100 @@
+.blockItem
+    position: relative
+    z-index: 1
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 75px
+    margin-bottom: 105px
+    .blockImg
+        position: relative
+        img
+            object-fit: cover
+            height: 100%
+            width: 100%
+            object-fit: cover
+            transform: rotate(-5deg)
+        .add
+            position: absolute
+            bottom: 30px
+            right: 90px
+            padding: 28px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: $colorWhite
+            border-radius: 50%
+            width: 24px
+            height: 24px
+            cursor: pointer
+            transition: 0.5s
+            filter: drop-shadow(2px 2px 2px white)
+            span
+                position: absolute
+                top: calc( 50% - 2px )
+                left: calc( 50% - 10px )
+                width: 20px
+                height: 4px
+                background-color: black
+                &:last-child
+                    transform: rotate(90deg)
+            &:hover
+                filter: drop-shadow(1px 1px 10px white)
+
+        .wrapSvg
+            position: absolute
+            bottom: -20px
+            left: 65px
+            scg
+                width: 100%
+    .blockDesc
+        .name
+            font-size: 48px
+            font-family: Futura Md BT
+            // font-family: futuraMediumBT
+            font-style: italic
+            font-weight: 700
+            line-height: 48px //100%
+            letter-spacing: 7.68px
+            margin-bottom: 21px
+        .priceSizeBag
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 25px
+            .price
+                // font-family: Futura Hv BT
+                font-size: 36px
+                // font-style: normal
+                font-weight: 400
+                line-height: 36px //* 100% */
+            .sizeBag
+                display: flex
+                align-items: center
+                .size
+                    // font-family: Futura Hv BT
+                    font-size: 36px
+                    // font-style: normal
+                    font-weight: 400
+                    // line-height: normal
+                    display: flex
+                    align-items: center
+                    span
+                        // font-family: Futura Bk BT
+                        font-size: 16px
+                        // font-style: normal
+                        font-weight: 400
+                        // line-height: normal
+                        margin-right: 19px
+                    select.changeSize
+                        background-color: transparent
+                        color: $colorWhiteText
+                        border: none
+                        margin-right: 32px
+                    select option
+                        background-color: black
+                        border: none
+                .bagItem
+                    cursor: pointer
+          
+            

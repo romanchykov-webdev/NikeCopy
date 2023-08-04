@@ -1,0 +1,109 @@
+/*interface.sass*/
+body
+    background-color: $bgColor
+    font-family: 'Futura Md BT'
+    // font-family: 'Futura PT', sans-serif
+    color: $colorWhiteText
+    // font-family: Futura Bk BT
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 16px ///* 100% */
+    // text-transform: uppercase
+    // overflow: hidden
+button
+    background-color: transparent
+    border: none
+    color: $colorWhite
+    display: flex
+    align-items: center
+    cursor: pointer
+    // font-family: Futura Bk BT
+button.btn
+    border-radius: 36px
+    border: 1px solid $colorWhite
+    overflow: hidden
+    position: relative
+    font-weight: 400
+    span
+        position: relative
+        z-index: 1
+    svg
+        position: relative
+        margin-left: 8px
+        z-index: 1
+    &::before
+        content: ""
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: #ba000030
+        top: 100%
+        left: 0
+        z-index: 0
+        transition: 0.5s
+button.btn
+    &:hover
+        &::before
+            top: 0 
+.btnSmol
+    padding: 6px 16px
+    font-size: 12px
+    // font-style: normal
+    line-height: 0px
+    
+button.btn.btnMiddle
+    padding: 16px 47px 16px 24px
+    font-size: 16px
+    line-height: 16px
+button.btn.btnLarg
+    padding: 18px 47px 18px 24px
+    font-size: 16px
+    line-height: 12px //* 75% */
+button.semdMail
+    background-color: $colorWhite
+    padding: 16px 40px
+    color: $colorBlack
+    border-radius: 80px
+button.burger
+    width: 48px
+    height: 24px
+    position: relative
+    // outline: 1px solid red
+    span
+        position: absolute
+        height: 2px
+        width: 100%
+        background-color: $colorWhite
+        transition: 0.5s
+        &:nth-child(1)
+            top: 4px
+            left: 0
+        &:nth-child(2)
+            top: 11px
+            left: 0
+        &:nth-child(3)
+            top: 18px
+            left: 0
+button.burger.active
+    span
+        &:nth-child(1)
+            top: 11px
+            left: 0
+            transform: rotate(27deg)
+        &:nth-child(2)
+            top: 11px
+            left: 0
+            transform: rotate(-27deg)
+        &:nth-child(3)
+            top: 11px
+            opacity: 0
+a
+    text-decoration: none
+    color: $colorWhiteText
+ul
+    margin: 0
+    padding: 0
+    li
+        list-style-type: none
+

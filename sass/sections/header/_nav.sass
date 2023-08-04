@@ -1,0 +1,48 @@
+nav
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 114px
+    menu
+        display: flex
+        padding: 0
+        .burger
+            margin-right: 40px
+            // display: none
+        ul
+            display: flex
+            align-items: center
+            li
+                overflow: hidden
+                margin-right: 23px
+                &:last-child
+                    margin-right: 0
+                a
+                    position: relative
+                    top: -15px
+                    // top: 0
+                    left: 0
+                    transition: 0.5s
+                &:nth-child(2)>a
+                    transition-delay: 150ms
+                &:nth-child(3)>a
+                    transition-delay: 250ms
+                &:nth-child(4)>a
+                    transition-delay: 350ms
+                        
+        .burger.active~ul>li>a
+            top: 0
+    .logo
+        position: absolute
+        width: 80px
+        height: 31px
+        top: calc( 50% - (31px /2) )
+        left: calc( 50% - (80px/2)  )
+    .wrapper
+        display: flex
+        align-items: center
+        div
+            margin-right: 40px
+            &:last-child
+                margin-right: 0

@@ -1,0 +1,212 @@
+@media (max-width: 1320px)
+    .block7 
+        flex-wrap: wrap
+        // column-gap: 20px
+        img
+            height: 50px
+            margin-bottom: 40px
+    .block8
+        flex-direction: column
+        .blockText
+            width: 100%
+            margin-bottom: 40px
+            .textHeaer, .textSmol
+                text-align: center
+            button.btn.btnLarg
+                margin: 0 auto
+        .blockImg 
+            img:nth-child(3)
+                margin: 0 auto
+    .block9
+        flex-direction: column-reverse
+        .blockImg,.blockText
+            text-align: center
+            min-width: 100%
+        .blockText
+            margin-bottom: 40px
+            button.btn.btnSmol
+                margin: 0 auto
+    .block10
+        padding-left: 5px
+        padding-right: 5px
+        .wrapBg
+            right: -65px
+
+@media (max-width: 992px)
+    .vectorRight
+        display: none
+    .block3 
+        .tiles
+            grid-template-columns: 1fr
+            column-gap: 0
+            row-gap: 15px
+    .block4 
+        .wrapperItems
+            grid-template-columns: repeat(2, 1fr)
+            .wrap
+                &:nth-child(1)
+                    grid-column: 1
+                    grid-row: 1
+                &:nth-child(2)
+                    grid-column: 2
+                    grid-row: 1
+                &:nth-child(3)
+                    grid-column: 1
+                    grid-row: 2
+                &:nth-child(4)
+                    grid-column: 2
+                    grid-row: 2
+                &:nth-child(5)
+                    grid-column: 1
+                    grid-row: 3
+                &:nth-child(6)
+                    grid-column: 2
+                    grid-row: 3
+    .block5
+        flex-flow: column-reverse
+        .blockDesk
+            margin-bottom: 40px
+            .textHeader, .textSmol
+                text-align: center
+            button.btn.btnMiddle
+                margin: 0 auto
+    .block6
+        .textHeader
+            text-align: center
+        .wrapperItem
+            display: grid
+            grid-template-columns: repeat(2,1fr)
+            grid-template-rows: repeat(3,1fr)
+            gap: 40px
+            .wrap
+                &:nth-child(1)
+                    grid-column: 1
+                    grid-row: 1
+                &:nth-child(2)
+                    grid-column: 2
+                    grid-row: 2
+                &:nth-child(3)
+                    grid-column: 1
+                    grid-row: 3
+    .block7 
+        img
+            // height: 30px
+    .block11
+        flex-wrap: wrap
+        row-gap: 50px
+        .wrapItem
+            width: 50%
+            justify-content: flex-start
+    
+@media (max-width: 768px)
+    .block2 
+        .bigText 
+            .wrapper
+                width: auto
+                font-size: 42px
+                line-height: 80px
+                span
+                    &:first-child img
+                        right: -50px
+                    &:last-child img
+                        left: -80px
+    .block4 
+        .wrapperItems
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(6,1fr)
+            .wrap
+                &:nth-child(1)
+                    grid-column: 1
+                    grid-row: 1
+                &:nth-child(2)
+                    grid-column: 1
+                    grid-row: 2
+                &:nth-child(3)
+                    grid-column: 1
+                    grid-row: 3
+                &:nth-child(4)
+                    grid-column: 1
+                    grid-row: 4
+                &:nth-child(5)
+                    grid-column: 1
+                    grid-row: 5
+                &:nth-child(6)
+                    grid-column: 1
+                    grid-row: 6
+    .block5
+        .blockImg
+            margin: 0
+            justify-content: center
+            img
+                max-width: 100%
+    .block6
+        .wrapperItem
+            display: flex
+            flex-direction: column
+            align-items: center
+    .block8 
+        .blockImg 
+            display: flex
+            flex-direction: column
+            align-items: center
+            img
+                min-width: 100%
+    .block10 
+        .wrapTL
+            flex-direction: column
+            .blockText
+                margin-bottom: 50px
+              
+   
+@media (max-width: 576px)
+    main>.container 
+        .vectorLeft
+            display: none
+    .block2 
+        .bigText 
+            .wrapper 
+                span
+                    &:first-child img
+                        right: 30px
+                        top: -60px
+                    &:last-child img
+                        left: 0
+                        top: 70px
+                    
+    .block7
+        flex-wrap: wrap
+        row-gap: 40px
+    .block8 
+        .blockImg
+    .block9 
+        .blockText
+            font-size: 38px
+            .textSmol
+                font-size: 14px
+            
+                
+@media (max-width: 480px)
+    main>.container
+        overflow: hidden
+    .block4 .headerText .textWhite, .block4 .headerText .textTransparent
+    .block4 
+        .headerText
+            .textWhite,.textTransparent
+                font-size: 82px
+            .textTransparent
+                left: -25px
+                top: -40px
+    .block9 
+        .blockImg
+            img
+                width: 100%
+    .block11 
+        .wrapItem
+            width: 100%
+            justify-content: center
+    
+@media (max-width: 420px)
+   .block9 
+    .blockText
+        font-size: 32px
+

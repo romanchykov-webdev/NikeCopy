@@ -1,0 +1,83 @@
+footer
+    .wraper
+        display: flex
+        justify-content: space-between
+        padding: 80px 0 80px 0
+        .blockLeft,.blockRight
+            width: 50%
+        .blockLeft
+            font-family: Futura LT
+            text-transform: capitalize
+            .textHeader
+                font-size: 48px
+                font-style: normal
+                font-weight: 700
+                line-height: 64px //* 133.333% */
+                margin-bottom: 32px
+            .blockSendEmail
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                line-height: 24px //* 150% */
+                margin-bottom: 85px
+                position: relative
+                width: 400px
+                input
+                    width: 100%
+                    height: 50px
+                    border-radius: 80px
+                    border: 1px solid $colorWhite
+                    color: rgba(255, 255, 255, 0.50)
+                    padding-left: 40px
+                    background-color: transparent
+                button.semdMail
+                    position: absolute
+                    right: 0
+                    top: 0
+                    
+            .blockLogo
+        .blockRight
+            display: flex
+            .wrapUlL
+                margin-right: 70px
+                display: flex
+                flex-wrap: wrap
+                ul
+                    width: 50%
+            ul
+                font-weight: 400
+                line-height: normal
+                span.category
+                    display: inline-block
+                    font-family: Futura XBlkCnIt BT
+                    font-size: 24px
+                    font-style: italic
+                    margin-bottom: 24px
+                li
+                    margin-bottom: 16px
+                    a
+                        font-family: Futura LtCn BT
+                        font-size: 20px
+                        font-style: normal
+    .wrapCopyright
+        display: flex
+        justify-content: space-between
+        padding: 32px 0
+        .data
+            font-family: Futura Bk BT
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            text-transform: capitalize
+            svg
+                margin-left: 8px
+        .social
+            a
+                margin-right: 40px
+                &:last-child
+                    margin-right: 0
+// media query
+@import '_media'
+
+            

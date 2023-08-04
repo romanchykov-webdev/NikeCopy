@@ -1,0 +1,63 @@
+.headerSlider
+    display: flex
+    justify-content: space-between
+    width: 100%
+    position: relative
+    z-index: 2
+
+    .wraperPrevNext
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        // margin-right: 80px
+        // padding-top: 61px
+        span
+        .prevH
+            margin-right: 44px
+            span
+                margin-left: 8px
+        .nextH
+            span
+                margin-right: 8px
+        .prevH,.nextH
+            cursor: pointer
+            display: flex
+            align-items: center
+            height: 30px
+.wrapperHeaderSlider
+    overflow: hidden
+    // outline: 1px solid red   
+    // outline: 1px solid red
+    // display: flex
+    position: relative
+    z-index: 1
+    // display: grid
+    // grid-template-columns: repeat(4, 1fr)
+    display: flex
+    column-gap: 40px
+    .wrap
+        height: 240px
+        padding-top: 60px
+    .itemCart        
+        border: 1px solid $colorWhite
+        height: 195px
+        width: 300px
+        padding-left: 15px
+    .wrapImg
+        // margin-bottom: 40px
+        position: absolute
+        bottom: 100px
+        left: 15px
+        transition: 0.5s
+        img
+            width: 100%
+            object-fit: cover
+            transition: 0.5s            
+    .name
+        // display: inline-blocks
+        margin-bottom: 40px
+        padding-left: 32px
+        
+            
+// _items
+@import '_items'

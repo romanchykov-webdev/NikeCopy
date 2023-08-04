@@ -1,0 +1,38 @@
+.block8
+    display: flex
+    column-gap: 40px
+    margin-bottom: 270px
+    .blockText
+        width: 49%
+        font-style: normal
+        line-height: normal
+        font-weight: 400
+        .textHeaer
+            font-family: Futura Md BT
+            font-size: 64px
+            margin-bottom: 32px
+        .textSmol
+            font-family: Futura Bk BT
+            font-size: 24px
+            margin-bottom: 40px
+    .blockImg
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+        grid-template-rows: repeat(2,1fr)
+        column-gap: 40px
+        row-gap: 30px
+        img
+            // width: 100%
+            // height: 100%
+            &:nth-child(1)
+                // outline: 1px solid red
+                grid-column: 1
+                grid-row: 1/ span 3
+            &:nth-child(2)
+                grid-column: 2
+                grid-row: 1
+            &:nth-child(3)
+                grid-column: 2
+                grid-row: 2
+                margin-left: auto
+                
